@@ -1,0 +1,75 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="assets/css/formstyle.css">
+	<script type="text/javascript">
+
+function validate(){
+var pt1=/(\d{1,9}\.?(?=\d{1,9}))/;
+//pt2=;
+if(pt1.test(document.f1.mobile.value)==false){
+	alert("please enter valid email");
+	return false;
+}
+
+
+
+}
+</script>
+</head>
+<body>
+
+<form onsubmit="return validate();"method="get" action="" name="f1"id="login-form" class="login-form" autocomplete="off" role="main">
+  <h1 class="a11y-hidden">signup Form</h1>	
+  <div>
+    <label class="label-email">
+      <input type="email" class="text" name="email" placeholder="Email" tabindex="1" required />
+      <span class="required">Email</span>
+    </label>
+  </div>
+  <div>
+    <label class="label-mobile">
+      <input type="text" class="text" name="mobile" placeholder="mobile" tabindex="1" required />
+      <span class="required">Mobile</span>
+    </label>
+  </div>
+  <div>
+    <label class="label-file">
+      <input type="file" class="text" name="img" placeholder="Upload Image" tabindex="1" required />
+      <span class="required">Upload Image</span>
+    </label>
+  </div>
+  
+  <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
+  <label class="label-show-password" for="show-password">
+    <span>Show Password</span>
+  </label>
+  <div>
+  
+    <label class="label-password">
+      <input type="text" class="text" name="password" placeholder="Password" tabindex="2" required />
+      <span class="required">Password</span>
+    </label>
+  </div>
+
+  <input type="submit" value="Log In" />
+  <input type="RESET" value="CANCLE" />
+  <div class="email">
+    <a href="signup.php">Create Acoount?</a>
+  </div>
+  <figure aria-hidden="true">
+    <div class="person-body"></div>
+    <div class="neck skin"></div>
+    <div class="head skin">
+      <div class="eyes"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="hair"></div>
+    <div class="ears"></div>
+    <div class="shirt-1"></div>
+    <div class="shirt-2"></div>
+  </figure>
+</form>
+
+
+</body>
+</html>

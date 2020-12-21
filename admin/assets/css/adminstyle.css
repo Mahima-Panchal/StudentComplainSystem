@@ -1,0 +1,32 @@
+.mybody{
+  width: 1075px;  
+}
+.mycount{
+  height:auto;
+  width:100%;
+  /* background:linear-gradient(180deg,rgb(92, 88, 88),rgb(122, 95, 122),rgb(100,10,100)); */
+  display:flex;
+  padding:10px 10px 10px 10px;
+  margin:0px;
+  justify-content:center;
+}
+.count{
+    margin:10px;
+    background:white;
+    height:200px;
+    width: 45%;
+    padding:20px;
+    border-top:2px solid rgb(3, 3, 135);
+    border-bottom:2px solid rgb(3, 3, 54);;
+    border-right:2px solid rgb(3, 3, 97);;
+    border-left:2px solid rgb(3, 3, 97);;
+    border-radius:10px;
+    transition:transform ;
+}
+.mycount:hover{
+  background:linear-gradient(270deg,rgb(115, 115, 115),rgb(255, 255, 255));
+}
+.count:hover{
+  transition: 1s ease;
+  background:linear-gradient(90deg,rgb(115, 115, 115),rgb(255, 255, 255));
+}
